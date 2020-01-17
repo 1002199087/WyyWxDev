@@ -1,0 +1,8 @@
+<view style="height:100%;">
+  <view class="iconView">
+    <image class="icon" src="{{userInfo.avatarUrl}}"></image>
+  </view>
+  <view style="text-align: center;">昵称：{{userInfo.nickName}}</view>
+  <view style="text-align: center;">语言：{{userInfo.language}}</view>
+  <view style="text-align: center;">地址：{{userInfo.country}}_{{userInfo.province}}_{{userInfo.city}}</view>
+</view>

@@ -1,0 +1,47 @@
+<!--pages/vantCheckbox/vantCheckbox.wxml-->
+<view class="rootView">
+  <view class="groupTitle">基础用法</view>
+  <van-checkbox style="margin: 10px;" value="{{oneChecked}}" bind:change="onChange" id="0">复选框</van-checkbox>
+
+  <view class="groupTitle">禁用状态</view>
+  <van-checkbox style="margin: 10px;" disabled value="{{false}}">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" disabled value="{{true}}">复选框</van-checkbox>
+
+  <view class="groupTitle">禁用文本点击</view>
+  <van-checkbox style="margin: 10px;" value="{{twoChecked}}" id="1" bind:change="onChange" label-disabled>复选框</van-checkbox>
+
+  <view class="groupTitle">自定义形状</view>
+  <van-checkbox style="margin: 10px;" value="{{threeChecked}}" id="2" bind:change="onChange" shape="square">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" value="{{threeChecked}}" id="2" bind:change="onChange" shape="round">复选框</van-checkbox>
+
+  <view class="groupTitle">自定义选中颜色</view>
+  <van-checkbox style="margin: 10px;" value="{{fourChecked}}" id="3" bind:change="onChange" checked-color="#0099EB">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" value="{{fourChecked}}" id="3" bind:change="onChange" checked-color="#66CD00">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" value="{{fourChecked}}" id="3" bind:change="onChange" checked-color="#EE2C2C">复选框</van-checkbox>
+
+  <view class="groupTitle">自定义大小</view>
+  <van-checkbox style="margin: 10px;" value="{{fiveChecked}}" id="4" bind:change="onChange" icon-size="10px">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" value="{{fiveChecked}}" id="4" bind:change="onChange" icon-size="20px">复选框</van-checkbox>
+  <van-checkbox style="margin: 10px;" value="{{fiveChecked}}" id="4" bind:change="onChange" icon-size="30px">复选框</van-checkbox>
+
+  <view class="groupTitle">自定义图标</view>
+  <van-checkbox use-icon-slot value="{{sixChecked}}" bind:change="onChange" id="5" icon-size="10px" style="margin: 10px;">自定义图标
+    <image style="width:20px;height:20px;" slot="icon" src="{{sixChecked ? checked:unchecked}}"></image>
+  </van-checkbox>
+
+  <view class="groupTitle">复选框组</view>
+  <van-checkbox-group value="{{result}}" bind:change="onChange" id="6" style="margin: 10px;">
+    <van-checkbox name="a">复选框 a</van-checkbox>
+    <van-checkbox name="b" style="margin: 10px;">复选框 b</van-checkbox>
+    <van-checkbox name="c">复选框 c</van-checkbox>
+    <van-checkbox name="d" style="margin: 10px;">复选框 d</van-checkbox>
+  </van-checkbox-group>
+
+  <view class="groupTitle">设置最大可选数</view>
+  <van-checkbox-group value="{{result1}}" bind:change="onChange" id="7" max="2" style="margin: 10px;">
+    <van-checkbox name="a">复选框 a</van-checkbox>
+    <van-checkbox name="b" style="margin: 10px;">复选框 b</van-checkbox>
+    <van-checkbox name="c">复选框 c</van-checkbox>
+    <van-checkbox name="d" style="margin: 10px;">复选框 d</van-checkbox>
+  </van-checkbox-group>
+</view>

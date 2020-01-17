@@ -1,0 +1,5 @@
+<!--pages/vantField/vantField.wxml-->
+<view class="rootView">
+  <view class="groupTitle">基础用法</view>
+  <van-field value="{{oneValue}}" placeholder="请输入内容" border="{{true}}" bind:change="onChange"></van-field>
+</view>

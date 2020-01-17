@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell",
+    "van-tag": "../../miniprogram_npm/@vant/weapp/tag",
+    "van-icon": "../../miniprogram_npm/@vant/weapp/icon",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group"
+  }
+}

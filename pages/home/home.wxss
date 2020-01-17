@@ -1,0 +1,32 @@
+/* pages/home/home.wxss */
+
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.rootView {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: #eee9e9;
+}
+
+.containerView {
+  width: 100%;
+  height: fit-content;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.button {
+  width: 100%;
+  background-color: white;
+  border-color: black;
+  border: 0px;
+}
+
+.itemView {
+  width: 100%;
+}

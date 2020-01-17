@@ -1,0 +1,28 @@
+<!--pages/vantDatetimePicker/vantDatetimePicker.wxml-->
+<view class="rootView">
+  <view class="groupTitle">选择完整时间</view>
+  <van-datetime-picker type="datetime" value="{{currentDate}}" min-date="{{minDate}}" bind:input="onDateChange"></van-datetime-picker>
+
+  <view class="groupTitle">选择日期（年月日）</view>
+  <van-datetime-picker type="date" value="{{currentDate}}" min-date="{{minDate}}" bind:input="onDateChange"></van-datetime-picker>
+
+  <view class="groupTitle">选择日期（年月日，对选项文字处理）</view>
+  <van-datetime-picker type="date" value="{{currentDate}}" min-date="{{minDate}}" bind:input="onDateChange" formatter="{{formatter}}"></van-datetime-picker>
+
+  <view class="groupTitle">选择日期（月日，对选项文字处理）</view>
+  <van-datetime-picker type="year-month" value="{{currentDate}}" min-date="{{minDate}}" bind:input="onDateChange" formatter="{{formatter}}"></van-datetime-picker>
+
+  <view class="groupTitle">选择时间</view>
+  <view class="groupTitle">{{currentTime}}</view>
+  <van-datetime-picker type="time" value="{{currentTime}}" bind:confirm="onTimeConfirm"></van-datetime-picker>
+
+  <view class="groupTitle">选择时间（过滤器）</view>
+  <view class="groupTitle">{{currentTimeFilter}}</view>
+  <van-datetime-picker type="time" value="{{currentTimeFilter}}" bind:confirm="onTimeFilterConfirm" filter="{{filter}}"></van-datetime-picker>
+
+  <view class="groupTitle">与弹出层配合使用</view>
+  <van-cell is-link title="时间选择" value="{{currentTime}}" bind:click="showTimePopup"></van-cell>
+  <van-popup show="{{bottomShow}}" position="bottom" bind:close="onPopupClose">
+    <van-datetime-picker type="time" value="{{currentTime}}" bind:confirm="onTimeConfirm"></van-datetime-picker>
+  </van-popup>
+</view>

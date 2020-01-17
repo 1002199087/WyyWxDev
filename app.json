@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/userInfo/userInfo",
+    "pages/logs/logs",
+    "pages/vantButton/vantButton",
+    "pages/vantCell/vantCell",
+    "pages/vantIcon/vantIcon",
+    "pages/vantImage/vantImage",
+    "pages/vantLayout/vantLayout",
+    "pages/vantPopup/vantPopup",
+    "pages/vantTransition/vantTransition",
+    "pages/vantCheckbox/vantCheckbox",
+    "pages/vantDatetimePicker/vantDatetimePicker",
+    "pages/vantField/vantField",
+    "pages/input/input"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#EEE9E9",
+    "navigationBarBackgroundColor": "#0099EB",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,21 @@
+/* pages/vantImage/vantImage.wxss */
+
+page {
+  height: 100%;
+}
+
+.rootView {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee9e9;
+}
+
+.groupTitle {
+  margin: 10px;
+}
+
+.imgView {
+  margin: 10px;
+}

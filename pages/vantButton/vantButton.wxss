@@ -1,0 +1,16 @@
+/* pages/vantButton/vantButton.wxss */
+
+page {
+  height: 100%;
+}
+
+.rootView {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee9e9;
+}
+
+.btnStyle {
+  margin: 5px;
+}

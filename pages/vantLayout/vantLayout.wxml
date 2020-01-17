@@ -1,0 +1,48 @@
+<!--pages/vantLayout/vantLayout.wxml-->
+<view class="rootView">
+  <view class="groupTitle">基本用法</view>
+
+  <van-row>
+    <van-col span="8">
+      <view style="background-color: red;text-align: center;">8</view>
+    </van-col>
+    <van-col span="8">
+      <view style="background-color: green;text-align: center;">8</view>
+    </van-col>
+    <van-col span="8">
+      <view style="background-color: yellow;text-align: center;">8</view>
+    </van-col>
+  </van-row>
+
+  <van-row style="margin-top: 10px;">
+    <van-col span="4">
+      <view style="background-color: red;text-align: center;">4</view>
+    </van-col>
+    <van-col span="8" offset="4">
+      <view style="background-color: green;text-align: center;">8</view>
+    </van-col>
+    <van-col span="8">
+      <view style="background-color: yellow;text-align: center;">8</view>
+    </van-col>
+  </van-row>
+
+  <van-row style="margin-top: 10px;">
+    <van-col span="10" offset="10">
+      <view style="background-color: red;text-align: center;">10</view>
+    </van-col>
+  </van-row>
+
+  <view class="groupTitle">设置列元素间距</view>
+
+  <van-row gutter="10">
+    <van-col span="8">
+      <view style="background-color: red;text-align: center;">8</view>
+    </van-col>
+    <van-col span="8">
+      <view style="background-color: green;text-align: center;">8</view>
+    </van-col>
+    <van-col span="8">
+      <view style="background-color: yellow;text-align: center;">8</view>
+    </van-col>
+  </van-row>
+</view>

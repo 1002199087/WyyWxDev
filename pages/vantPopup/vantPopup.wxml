@@ -1,0 +1,46 @@
+<!--pages/vantPopup/vantPopup.wxml-->
+<view class="rootView">
+  <view class="groupTitle">基础用法</view>
+  <van-cell is-link title="展示弹出框" value="内容" bind:click="showPopup"></van-cell>
+  <van-popup show="{{show}}" bind:close="onClose">
+    <view class="popupView">内容</view>
+  </van-popup>
+
+  <view class="groupTitle">弹出位置</view>
+  <van-cell is-link title="顶部弹出" value="内容" bind:click="showTopPopup"></van-cell>
+  <van-popup show="{{topShow}}" bind:close="onClose" position="top">
+    <view class="popupView">顶部弹出</view>
+  </van-popup>
+  <van-cell is-link title="底部弹出" value="内容" bind:click="showBottomPopup"></van-cell>
+  <van-popup show="{{bottomShow}}" bind:close="onClose" position="bottom">
+    <view class="popupView">底部弹出</view>
+  </van-popup>
+  <van-cell is-link title="左边弹出" value="内容" bind:click="showLeftPopup"></van-cell>
+  <van-popup show="{{leftShow}}" bind:close="onClose" position="left" custom-style="height:100%;display: flex;justify-content: center;align-items: center;">
+    <view>左边弹出</view>
+  </van-popup>
+  <van-cell is-link title="右边弹出" value="内容" bind:click="showRightPopup"></van-cell>
+  <van-popup show="{{rightShow}}" bind:close="onClose" position="right" custom-style="height:100%;display: flex;justify-content: center;align-items: center;">
+    <view>右边弹出</view>
+  </van-popup>
+
+  <view class="groupTitle">关闭图标</view>
+  <van-cell is-link title="关闭图标" value="内容" bind:click="showClosePopup"></van-cell>
+  <van-popup closeable show="{{closeShow}}" bind:close="onClose" position="bottom" custom-style="width:100%;height:20%;display: flex;justify-content: center;align-items: center;">
+    <view>关闭图标</view>
+  </van-popup>
+  <van-cell is-link title="自定义关闭图标" value="内容" bind:click="showCustClosePopup"></van-cell>
+  <van-popup closeable show="{{custCloseShow}}" bind:close="onClose" custom-style="width:100%;height:20%;display: flex;justify-content: center;align-items: center;" close-icon="/pages/res/close.png" position="bottom">
+    <view>自定义关闭图标</view>
+  </van-popup>
+  <van-cell is-link title="关闭图标位置" value="内容" bind:click="showClosePositionPopup"></van-cell>
+  <van-popup closeable show="{{closePositionShow}}" bind:close="onClose" custom-style="width:100%;height:20%;display: flex;justify-content: center;align-items: center;" close-icon-position="top-left" position="bottom">
+    <view>关闭图标位置</view>
+  </van-popup>
+
+  <view class="groupTitle">圆角弹窗</view>
+  <van-cell is-link title="圆角弹窗" value="内容" bind:click="showRoundPopup"></van-cell>
+  <van-popup round show="{{roundShow}}" bind:close="onClose" custom-style="width:100%;height:20%;display: flex;justify-content: center;align-items: center;" position="bottom">
+    <view>圆角弹窗</view>
+  </van-popup>
+</view>

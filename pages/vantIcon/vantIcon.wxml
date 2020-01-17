@@ -1,0 +1,28 @@
+<view class="rootView">
+  <view class="groupTitle">基础用法</view>
+  <view style="display: flex;flex-direction: row;">
+    <van-icon name="chat-o" style="margin:10px;"></van-icon>
+    <van-icon name="setting-o" style="margin:10px;"></van-icon>
+    <van-icon name="fire-o" style="margin:10px;"></van-icon>
+  </view>
+
+  <view class="groupTitle">提示信息</view>
+  <view style="display: flex;flex-direction: row;">
+    <van-icon name="chat-o" style="margin:10px;" dot="true"></van-icon>
+    <van-icon name="setting-o" style="margin:10px;" info="9"></van-icon>
+    <van-icon name="fire-o" style="margin:10px;" info="99+"></van-icon>
+  </view>
+
+  <view class="groupTitle">图标颜色</view>
+  <view style="display: flex;flex-direction: row;">
+    <van-icon name="chat-o" style="margin:10px;" color="red"></van-icon>
+    <van-icon name="setting-o" style="margin:10px;" color="blue"></van-icon>
+    <van-icon name="fire-o" style="margin:10px;" color="#0099EB"></van-icon>
+  </view>
+
+  <view class="groupTitle">图标大小</view>
+  <view style="display: flex;flex-direction: row;">
+    <van-icon name="chat-o" style="margin:10px;"></van-icon>
+    <van-icon name="chat-o" style="margin:10px;" size="50px"></van-icon>
+  </view>
+</view>

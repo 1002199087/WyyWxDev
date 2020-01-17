@@ -1,0 +1,12 @@
+<view class="rootView">
+  <view class="containerView">
+    <view class="contentView">输入内容：{{inputValue}}</view>
+    <input class="inputView" bindinput="bindInputValue" placeholder="请输入内容"></input>
+  </view>
+
+  <view class="containerView">
+    <view class="contentView">输入密码内容：{{inputPwdValue}}</view>
+    <input class="inputView" password="text" bindinput="bindInputPwdValue" placeholder="输入密码内容"></input>
+  </view>
+
+</view>

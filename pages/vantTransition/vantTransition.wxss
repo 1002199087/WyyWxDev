@@ -1,0 +1,34 @@
+/* pages/vantTransition/vantTransition.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.rootView {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee9e9;
+}
+
+.cellView {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee9e9;
+}
+
+.groupTitle {
+  margin: 10px;
+}
+
+.transitionView {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

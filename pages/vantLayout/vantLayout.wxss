@@ -1,0 +1,17 @@
+/* pages/vantLayout/vantLayout.wxss */
+
+page {
+  height: 100%;
+}
+
+.groupTitle {
+  margin: 10px;
+}
+
+.rootView {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee9e9;
+}

@@ -1,0 +1,30 @@
+<view class="rootView">
+  <van-button class="btnStyle" type="default" block>默认按钮default</van-button>
+  <van-button class="btnStyle" type="primary" block>主要按钮primary</van-button>
+  <van-button class="btnStyle" type="info" block>信息按钮info</van-button>
+  <van-button class="btnStyle" type="warning" block>警告按钮warning</van-button>
+  <van-button class="btnStyle" type="danger" block>危险按钮danger</van-button>
+
+  <van-button class="btnStyle" type="primary" block plain>朴素主要按钮primary</van-button>
+  <van-button class="btnStyle" type="info" block plain>朴素信息按钮info</van-button>
+
+  <van-button class="btnStyle" type="primary" block plain hairline>细边框朴素主要按钮primary</van-button>
+  <van-button class="btnStyle" type="info" block plain hairline>细边框朴素信息按钮info</van-button>
+
+  <van-button class="btnStyle" type="primary" block plain disabled>禁用状态朴素主要按钮primary</van-button>
+
+  <van-button class="btnStyle" type="primary" block loading loading-text="主要按钮primary"></van-button>
+  <van-button class="btnStyle" type="primary" block loading loading-type="spinner"></van-button>
+
+  <van-button class="btnStyle" type="info" block plain icon="like-o">图片朴素主要按钮primary</van-button>
+
+  <van-button class="btnStyle" type="primary" size="large">大号主要按钮primary</van-button>
+
+  <van-button class="btnStyle" color="#0099EB" block>自定义颜色按钮</van-button>
+
+  <van-button class="btnStyle" color="#0099EB" block plain>自定义颜色朴素按钮</van-button>
+
+  <van-button square class="btnStyle" type="primary" block plain>方形朴素按钮</van-button>
+
+  <van-button round class="btnStyle" type="primary" block plain>圆形朴素按钮</van-button>
+</view>

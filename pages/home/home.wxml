@@ -1,0 +1,17 @@
+<!--home.wxml-->
+<view class="rootView">
+  <!--<button class="button" wx:if="{{canIUse}}" open-type="getUserInfo" bindtap="bindGetUserInfo">获取权限</button>
+  <button class="button" bindtap="goToUserInfo">获取微信头像</button>-->
+  <view class="containerView">
+    <block wx:for="{{buttons}}" wx:for-item="item" data-item="{{item}}">
+      <view class="itemView" wx:if="{{item.id < 1}}">
+        <button class="button" wx:if="{{canIUse}}" open-type="getUserInfo" bindtap="onItemClicked" data-item="{{item}}">{{item.text}}</button>
+        <view style="round-color: #eee9e9;height:1px;"></view>
+      </view>
+      <view class="itemView" wx:else>
+        <button class="button" bindtap="onItemClicked" data-item="{{item}}">{{item.text}}</button>
+        <view style="round-color: #eee9e9;height:1px;"></view>
+      </view>
+    </block>
+  </view>
+</view>

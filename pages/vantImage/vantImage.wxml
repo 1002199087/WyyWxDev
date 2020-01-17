@@ -1,0 +1,60 @@
+<!--pages/vantImage/vantImage.wxml-->
+<view class="rootView">
+  <view class="groupTitle">基础用法</view>
+  <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg">
+  </van-image>
+
+  <view class="groupTitle">填充模式</view>
+  <view style="flex-direction: row;">
+    <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="contain">
+    </van-image>
+    <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="cover">
+    </van-image>
+    <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="fill">
+    </van-image>
+    <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="none">
+    </van-image>
+    <van-image class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="scale-down">
+    </van-image>
+  </view>
+
+  <view class="groupTitle">圆形图片</view>
+  <view style="flex-direction: row;">
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg">
+    </van-image>
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="contain">
+    </van-image>
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="cover">
+    </van-image>
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="fill">
+    </van-image>
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="none">
+    </van-image>
+    <van-image round class="imgView" width="100" height="100" src="https://img.yzcdn.cn/vant/cat.jpeg" fit="scale-down">
+    </van-image>
+  </view>
+
+  <view class="groupTitle">加载中提示</view>
+  <view style="flex-direction: row;">
+    <van-image class="imgView" width="100" height="100" show-loading>
+    </van-image>
+    <van-image use-loading-slot class="imgView" width="100" height="100" show-loading>
+      <van-loading slot="loading" type="spinner" size="20"></van-loading>
+    </van-image>
+  </view>
+
+  <view class="groupTitle">加载失败提示</view>
+  <view style="flex-direction: row;">
+    <van-image class="imgView" width="100" height="100" show-error src="https://img.yzcdn.cn/vant/cat.jpegs">
+    </van-image>
+    <van-image class="imgView" width="100" height="100" use-error-slot src="https://img.yzcdn.cn/vant/cat.jpegs">
+      <text slot="error">加载失败</text>
+    </van-image>
+  </view>
+
+  <view class="groupTitle">加载资源图片</view>
+  <view style="flex-direction: row;">
+    <van-image class="imgView" width="100" height="100" src="/pages/res/header.png">
+    </van-image>
+  </view>
+</view>

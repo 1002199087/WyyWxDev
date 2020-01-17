@@ -1,0 +1,21 @@
+<!--pages/vantTransition/vantTransition.wxml-->
+<view class="rootView">
+  <view class="transitionView">
+    <van-transition show="{{noSetFlag}}" name="{{transitionName}}">
+      <view>{{showText}}</view>
+    </van-transition>
+  </view>
+
+  <scroll-view class="cellView" scroll-y="true">
+    <van-cell is-link title="无设定效果" bind:click="onSetClick" id="0"></van-cell>
+    <van-cell is-link title="fade" bind:click="onSetClick" id="1"></van-cell>
+    <van-cell is-link title="fade-up 上滑淡入" bind:click="onSetClick" id="2"></van-cell>
+    <van-cell is-link title="fade-down 下滑淡入" bind:click="onSetClick" id="3"></van-cell>
+    <van-cell is-link title="fade-left 左滑淡入" bind:click="onSetClick" id="4"></van-cell>
+    <van-cell is-link title="fade-right 右滑淡入" bind:click="onSetClick" id="5"></van-cell>
+    <van-cell is-link title="slide-up 上滑进入" bind:click="onSetClick" id="6"></van-cell>
+    <van-cell is-link title="slide-down 下滑进入" bind:click="onSetClick" id="7"></van-cell>
+    <van-cell is-link title="slide-left 左滑进入" bind:click="onSetClick" id="8"></van-cell>
+    <van-cell is-link title="slide-right 右滑进入" bind:click="onSetClick" id="9"></van-cell>
+  </scroll-view>
+</view>
